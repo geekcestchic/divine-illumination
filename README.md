@@ -1,4 +1,4 @@
-# divine-illumination
+# Divine Illumination
 Simple Spiritual Sounds app.
 
 [live demo here](http://divine-illumination.herokuapp.com/#/)
