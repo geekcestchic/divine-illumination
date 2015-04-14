@@ -1,9 +1,10 @@
 *{
   margin:0;
+  padding:0;
   font-family: 'Pathway Gothic One', sans-serif;
 }
 body{
-  background: url(../pics/cathedral.jpg) no-repeat center center fixed; 
+  background: url('https://s3-eu-west-1.amazonaws.com/choral-app/pics/cathedral.jpg') no-repeat center center fixed; 
   background-size: cover;
   /*width:100%;*/
 }
@@ -15,6 +16,7 @@ h1{
   color:white;
   text-align: center;
   opacity:0.5;
+  margin:0;
 }
 img {
   opacity:0.1;
@@ -45,7 +47,7 @@ img {
   text-align: center;
   margin:20 auto;
   z-index:1;
-  /*box-shadow: 0px 0px 25px yellow;*/
+  cursor:pointer;
 }
 .element p{
   position: relative;
