@@ -1,5 +1,6 @@
 $(document).ready(function(){
   
+
   //factoring out the functions//
 
   //playing the sound after clicking on the div
@@ -52,7 +53,6 @@ $(document).ready(function(){
     }); 
     // console.log(element.id)
   }
-
   //after a sound ends this function is called
   function endSound(element){
     console.log('end of sound');
