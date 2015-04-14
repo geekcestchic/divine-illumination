@@ -1,0 +1,1993 @@
+
+
+Started GET "/" for ::1 at 2015-04-14 10:52:42 +0100
+
+ActiveRecord::NoDatabaseError (FATAL:  database "choral_app_development" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (44.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 10:52:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.3ms)
+Completed 200 OK in 1242ms (Views: 1232.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/style-9f278be75a262ffef596221c2960df4b.css?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/application-5adcba48d2ebfcc6ebbe4fe8849dff03.css?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/css/style.css" for ::1 at 2015-04-14 10:52:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/script/soundmanager2.js" for ::1 at 2015-04-14 10:52:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/script/soundmanager2.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.8ms)
+
+
+Started GET "/js/app.js" for ::1 at 2015-04-14 10:52:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/js/app.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (31.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 10:52:57 +0100
+
+
+Started GET "/pics/sound.gif" for ::1 at 2015-04-14 10:52:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/pics/sound.gif"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.0ms)
+
+
+Started GET "/pics/cathedral.jpg" for ::1 at 2015-04-14 10:52:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/pics/cathedral.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.5ms)
+
+
+Started GET "/css/style.css" for ::1 at 2015-04-14 10:53:19 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (30.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 10:54:43 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-9f278be75a262ffef596221c2960df4b.css?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/application-5adcba48d2ebfcc6ebbe4fe8849dff03.css?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/css/style.css" for ::1 at 2015-04-14 10:54:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 10:54:43 +0100
+
+
+Started GET "/script/soundmanager2.js" for ::1 at 2015-04-14 10:54:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/script/soundmanager2.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.5ms)
+
+
+Started GET "/js/app.js" for ::1 at 2015-04-14 10:54:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/js/app.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.4ms)
+
+
+Started GET "/pics/sound.gif" for ::1 at 2015-04-14 10:54:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/pics/sound.gif"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (44.4ms)
+
+
+Started GET "/pics/cathedral.jpg" for ::1 at 2015-04-14 10:54:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/pics/cathedral.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (30.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 10:55:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (1.5ms)
+Completed 200 OK in 181ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-9f278be75a262ffef596221c2960df4b.css?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/application-5adcba48d2ebfcc6ebbe4fe8849dff03.css?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/css/style.css" for ::1 at 2015-04-14 10:55:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (34.3ms)
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 10:55:40 +0100
+
+
+Started GET "/script/soundmanager2.js" for ::1 at 2015-04-14 10:55:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/script/soundmanager2.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (30.4ms)
+
+
+Started GET "/js/app.js" for ::1 at 2015-04-14 10:55:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/js/app.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (35.3ms)
+
+
+Started GET "/pics/sound.gif" for ::1 at 2015-04-14 10:55:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/pics/sound.gif"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/pics/cathedral.jpg" for ::1 at 2015-04-14 10:55:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/pics/cathedral.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.0ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 10:58:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.4ms)
+Completed 200 OK in 81ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-1ad1c0d374418d46421a97303af705f1.css?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/application-a00f9efca8b5866310a8643c90be6ef1.css?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/css/style.css" for ::1 at 2015-04-14 10:58:14 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (2.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (16.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 10:58:14 +0100
+
+
+Started GET "/script/soundmanager2.js" for ::1 at 2015-04-14 10:58:14 +0100
+
+ActionController::RoutingError (No route matches [GET] "/script/soundmanager2.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (53.5ms)
+
+
+Started GET "/js/app.js" for ::1 at 2015-04-14 10:58:14 +0100
+
+ActionController::RoutingError (No route matches [GET] "/js/app.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Alexandre/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.5ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 10:59:54 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-1ad1c0d374418d46421a97303af705f1.css?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/application-a00f9efca8b5866310a8643c90be6ef1.css?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 10:59:54 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:00:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 67ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-1ad1c0d374418d46421a97303af705f1.css?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/application-a00f9efca8b5866310a8643c90be6ef1.css?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:00:26 +0100
+
+
+Started GET "/assets/application-a00f9efca8b5866310a8643c90be6ef1.css?body=1" for ::1 at 2015-04-14 11:00:36 +0100
+
+
+Started GET "/assets/style-1ad1c0d374418d46421a97303af705f1.css?body=1" for ::1 at 2015-04-14 11:00:36 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:01:21 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/style-806f1e3f0b386718090019822166c942.css?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/application-fc31721b1c966db36ea9a65b2fcd3ecf.css?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:01:21 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:02:02 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-509ff40bcdf73f404c5242cdb367217e.css?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/application-8e1a8c203585d45eebb4037ce2c9d218.css?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:02:02 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:02:41 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/style-e44c8a5660b038af29f02c91379b4000.css?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/application-69bfe80fd53e8a47b133b83d07aad1bb.css?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:02:41 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:02:49 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/style-6fa77e1c1d99ed8619ed2cbbeda86f5a.css?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/application-de87450e294b3af6f890c03d971e0057.css?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:02:49 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:02:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-e44c8a5660b038af29f02c91379b4000.css?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/application-69bfe80fd53e8a47b133b83d07aad1bb.css?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:02:55 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:06:50 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:06:50 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:07:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-8e88b5521bb473d087193ee6dca0cbe9.css?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/application-c9d25f35cb8148ecb09d56675d8ef1d2.css?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:07:13 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:07:20 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-4633a9b12f383d22377eb3eeb858b412.css?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/application-24902a86ada24ec5647e9bd31bb275ce.css?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:07:20 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:10:02 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/style-e44c8a5660b038af29f02c91379b4000.css?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/application-69bfe80fd53e8a47b133b83d07aad1bb.css?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:10:02 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 11:15:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-69bfe80fd53e8a47b133b83d07aad1bb.css?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/style-e44c8a5660b038af29f02c91379b4000.css?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/app-fea1444f217addc7257d291f01824fb2.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/application-dde555535ce393fc78e3d51b19028447.js?body=1" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/assets/script/soundmanager2.js" for ::1 at 2015-04-14 11:15:13 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:10:18 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app-74c2eaca6610c50c93f15c622ed4698f.js?body=1" for ::1 at 2015-04-14 12:10:18 +0100
+
+
+Started GET "/assets/application-c8e630cfcbf9db2ed52dbcd30fcd3957.js?body=1" for ::1 at 2015-04-14 12:10:18 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:11:40 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 161ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-d6797fbaf2ab1671329e28a60807786b.css?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/application-9a6503106c4866b49c35f640860cea9a.css?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/app-952b9da10ca17f3c0ccbb4b9e749f28b.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/assets/application-dc94a348d5dc2140afc020cc914ae486.js?body=1" for ::1 at 2015-04-14 12:11:41 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:12:26 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/app-952b9da10ca17f3c0ccbb4b9e749f28b.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/assets/application-dc94a348d5dc2140afc020cc914ae486.js?body=1" for ::1 at 2015-04-14 12:12:27 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:13:29 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 124ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/app-8ea02f91e45e757e971e6b3fc1bd430d.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/application-93559dc333fb96c9e4f964e83d5f7bd9.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:13:29 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:14:13 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/app-1247d41caea07c6716db8943fbe3829e.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/assets/application-4b1eee3f2b2ce066942ac504ccb2bbb6.js?body=1" for ::1 at 2015-04-14 12:14:14 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:23:53 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 114ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/app-dea6bd5dac6a4a7f2d2a02c947fe4105.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/assets/application-994e16a54bd146ade1f4df4ce9c4f3c5.js?body=1" for ::1 at 2015-04-14 12:23:54 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:24:33 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 171.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/app-81d60858afbd8ea71281cd28f111ec26.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/assets/application-527363caccabd4d7924ab3bc836e6a58.js?body=1" for ::1 at 2015-04-14 12:24:33 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:25:29 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 143ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/app-ec22502f813f24ed1daca4aac77c20a1.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/assets/application-0ed19ba2af743dc933008640635de978.js?body=1" for ::1 at 2015-04-14 12:25:29 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:29:55 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-6a50628e1acaa452043dca8263e695b2.css?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/application-682c1e43b5d8e35dce9d59365c5b0188.css?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/app-ec22502f813f24ed1daca4aac77c20a1.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/assets/application-0ed19ba2af743dc933008640635de978.js?body=1" for ::1 at 2015-04-14 12:29:56 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:30:16 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-e44c8a5660b038af29f02c91379b4000.css?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/app-ec22502f813f24ed1daca4aac77c20a1.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/application-69bfe80fd53e8a47b133b83d07aad1bb.css?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/assets/application-0ed19ba2af743dc933008640635de978.js?body=1" for ::1 at 2015-04-14 12:30:16 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:30:47 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/application-4bf04568bbc753b3368be43412e5783a.css?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/style-71ceaf95698c6628301b86f361ea26dd.css?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/app-ec22502f813f24ed1daca4aac77c20a1.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/assets/application-0ed19ba2af743dc933008640635de978.js?body=1" for ::1 at 2015-04-14 12:30:48 +0100
+
+
+Started GET "/" for ::1 at 2015-04-14 12:31:11 +0100
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.1ms)
+Completed 200 OK in 192ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-71ceaf95698c6628301b86f361ea26dd.css?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/application-4bf04568bbc753b3368be43412e5783a.css?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/app-05a6cd3a8f2649ee6e496ef67bee48e4.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/script/soundmanager2-jsmin-e8dbf6acf878010c1469c2c3520cbdc9.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-jsmin-e95c2d5c8232b36f58f93f749486a90b.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/script/soundmanager2-nodebug-447711b5a4092b12723ae77a7472400a.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/script/soundmanager2-5d8e27cb170c832cb2dd2bc78eece1c7.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
+
+
+Started GET "/assets/application-c0dc2a2fa61bd05ecad015f676d9f6bf.js?body=1" for ::1 at 2015-04-14 12:31:11 +0100
