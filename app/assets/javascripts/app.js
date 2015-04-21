@@ -16,7 +16,7 @@ $(document).ready(function(){
       $(element).css('opacity', '0.9');
 
       //increase the waves gif opacity by 0.1
-      waves.style.opacity += 0.1;
+      waves.style.opacity = waves.style.opacity + 0.1;
 
       //show the angel for 4s
       showAngel();
@@ -29,8 +29,7 @@ $(document).ready(function(){
     soundManager.play(element.id,{volume:50});
     $(element).css('opacity', '0.9');
     //increase the waves gif opacity by 0,1
-    waves.style.opacity += 0.1;
-
+    waves.style.opacity = waves.style.opacity + 0.1;
     //show the angel for 4s
     showAngel();
   }
@@ -71,7 +70,7 @@ $(document).ready(function(){
     console.log('end of sound');
     $(element).css('opacity', '0.5');
     //decrease opacity by 0.1
-    waves.style.opacity -= 0.1;
+    waves.style.opacity = waves.style.opacity - 0.1;
   };
 
   //assigning the clicks
