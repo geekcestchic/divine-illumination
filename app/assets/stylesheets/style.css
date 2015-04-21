@@ -4,8 +4,11 @@
   font-family: 'Pathway Gothic One', sans-serif;
 }
 body{
+  z-index:0;
   background: url('https://s3-eu-west-1.amazonaws.com/choral-app/pics/cathedral.jpg') no-repeat center center fixed; 
   background-size: cover;
+  width:100%;
+  overflow: hidden;
   /*width:100%;*/
 }
 h1{
@@ -16,7 +19,7 @@ h1{
   color:white;
   text-align: center;
   opacity:0.5;
-  margin:0;
+  margin-top:-20px;
 }
 img {
   opacity:0.1;
@@ -68,7 +71,14 @@ img {
   float:right;
   /*text-align: right;*/
 }
-
-.effect{
+#angel{
+  border-radius: 50%;
+  z-index:100;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin:-100px 0 0 -100px;
+  width:200px;
+  height:200px;
   opacity:0;
 }

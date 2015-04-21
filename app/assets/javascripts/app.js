@@ -1,25 +1,38 @@
 $(document).ready(function(){
-  
+  //backgroun gif with sound waves
+  var waves = document.getElementById('waves');
+  waves.style.opacity = 0;
 
   //factoring out the functions//
 
   //playing the sound after clicking on the div
-  function playSound(element){
-    // console.log(element)
+  function clickSound(element){
+    
     $(element).click(function(){
-      console.log('clicked');
+
       soundManager.play(element.id,{volume:50});
+
+      //the button we clicked on should be 90% visible now
       $(element).css('opacity', '0.9');
-      $('.effect').css('opacity', '0.1');
+
+      //increase the waves gif opacity by 0.1
+      waves.style.opacity += 0.1;
+
+      //show the angel for 4s
+      showAngel();
     });
+
   };
   
   //playing the sound after keypress... yeah I know the name is confusing
-  function clickSound(element){
-    console.log(element.id);
+  function pressSound(element){
     soundManager.play(element.id,{volume:50});
     $(element).css('opacity', '0.9');
-    $('.effect').css('opacity', '0.1');
+    //increase the waves gif opacity by 0,1
+    waves.style.opacity += 0.1;
+
+    //show the angel for 4s
+    showAngel();
   }
 
   //assigning the keypresses
@@ -28,14 +41,14 @@ $(document).ready(function(){
     key = String.fromCharCode(e.keyCode);
     // console.log(key);
     switch (key) {
-      case '1': clickSound(one); break;
-      case '2': clickSound(two); break;
-      case '3': clickSound(three); break;
-      case '4': clickSound(four); break;
-      case '5': clickSound(five); break;
-      case '6': clickSound(six); break;
-      case '7': clickSound(seven); break;
-      case '8': clickSound(eight); break;
+      case '1': pressSound(one); break;
+      case '2': pressSound(two); break;
+      case '3': pressSound(three); break;
+      case '4': pressSound(four); break;
+      case '5': pressSound(five); break;
+      case '6': pressSound(six); break;
+      case '7': pressSound(seven); break;
+      case '8': pressSound(eight); break;
     }
 
   });
@@ -57,20 +70,19 @@ $(document).ready(function(){
   function endSound(element){
     console.log('end of sound');
     $(element).css('opacity', '0.5');
-    // if (one.playState === 0 && two.playState === 0 && three.playState === 0 && four.playState === 0){
-      $('.effect').css('opacity', '0');
-    // };
+    //decrease opacity by 0.1
+    waves.style.opacity -= 0.1;
   };
 
   //assigning the clicks
-  playSound(one);
-  playSound(two);
-  playSound(three);
-  playSound(four);
-  playSound(five);
-  playSound(six);
-  playSound(seven);
-  playSound(eight);
+  clickSound(one);
+  clickSound(two);
+  clickSound(three);
+  clickSound(four);
+  clickSound(five);
+  clickSound(six);
+  clickSound(seven);
+  clickSound(eight);
     
   //defining SoundManager
   soundManager.url = 'swf/soundmanager2.swf'; // path to movie  
@@ -90,5 +102,12 @@ $(document).ready(function(){
     createSound(seven);
     createSound(eight);
   } 
+  function showAngel(){
+    $("#angel").animate({
+      opacity: 0.35
+    }, 4000, function(){ //this is the end function
+      $("#angel").animate({opacity: 0},4000);
+    });
+  };
 
 });
